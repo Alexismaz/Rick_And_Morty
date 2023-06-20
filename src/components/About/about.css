@@ -1,0 +1,53 @@
+.fondo {
+    background-image: url(../../Images/fondo_about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 1px;
+}
+.logoAbout {
+    background-image: url(../../Images/logo_about.png);;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+}
+.logoTitle {
+    color: rgba(38, 255, 244, 0.747);
+    transform: skewX(-10deg);
+    position: relative;
+    left: -10%;
+    
+}
+.logoName {
+    color: rgba(38, 255, 244, 0.747);
+    transform: skewX(-10deg);
+    position: relative;
+    top: 30%;
+    left: -5%
+}
+.textAbout {
+    color: rgb(147, 187, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 40%;
+    left: 0.5%;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+.textAbout h1{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.textAbout h2 {
+    text-align: start;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}

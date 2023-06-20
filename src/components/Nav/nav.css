@@ -1,6 +1,72 @@
 .Nav {
-    background-color: rgba(206, 139, 92, 0.781);
-    font-size: 50px;
+    background-color: rgb(206, 140, 92);
     border-bottom-left-radius: 0.2cm;
     border-bottom-right-radius: 0.2cm;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 6vh;
+    align-content: center;
+    align-items: center;
+}
+.linkNav {
+    height: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+}
+.buttonContainer {
+    height: 6vh;
+    width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: baseline;
+}
+.Nav button {
+    border: none;
+    background-color: rgba(255, 127, 80, 0);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.buttonContainer button {
+    height: 30px;
+    width: auto;
+    font-size: 15px;
+}
+.buttonNav {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.buttonNav:hover::after {
+    width: 100%;
+}
+.buttonNav::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s;
+}
+.buttonContainer button:hover {
+    background-color: rgba(177, 118, 76, 0.781);
+}
+.imgNavContainer {
+    background-image: url(../../Images/logo_about.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 6vh;
 }

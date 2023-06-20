@@ -1,0 +1,43 @@
+.container {
+    background: url("../../Images/nasa-rTZW4f02zY8-unsplash.jpg") center/cover;
+    display: flex;
+    height: 91.8vh;
+    width: auto;
+    justify-content: space-between;
+}
+.text h1 {
+    font-size: 80px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+.text h2 {
+    font-size: 40px;
+}
+.text {
+    color: rgb(144, 182, 95);
+    width: 50%;
+    height: 91.8vh;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.divImg {
+    display: flex;
+    align-items:  center;
+    width: 50%;
+    height: auto;
+}
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+.buttonDetail {
+    width: 100px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.212);
+    border: none;
+    position: absolute;
+    border-radius: 40px;
+    left: 0.5%;
+    cursor: pointer;
+}

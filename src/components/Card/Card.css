@@ -1,0 +1,58 @@
+.buttonCard {
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.753);
+  position: absolute;
+  right: 1%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.075);
+  font-size: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.buttonCard:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+  animation: agrandar 0.3s forwards;
+}
+
+@keyframes agrandar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.8);
+    background-color: rgba(0, 0, 0, 0.267);
+    color: red;
+  }
+}
+.card {
+  border-radius: 5px;
+  background-color: rgba(206, 139, 92, 0.781);
+  position: relative;
+  display: inline-felx;
+  flex-basis: 25px;
+  margin-top: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 2px;
+  height: 400px;
+}
+.cardName {
+  color: rgb(168, 241, 226);
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 18%;
+  position: absolute;
+  top: -4.5%;
+  background-color: rgba(0, 0, 0, 0.205);
+  align-content: center;
+  flex-wrap: wrap;
+  border-bottom-right-radius: 20px;
+}
+.cardInfo {
+  display: flex;
+  justify-content: space-evenly
+}

@@ -7,7 +7,7 @@ export default function SearchBar({props}) {
    }
    return (
       <div className="divSearch">
-         <input type='search' value={id} onChange={handleChange}/>
+         <input className="inputSearch" placeholder="Busqueda por Id..." type='search' value={id} onChange={handleChange}/>
          <button onClick={() => props.onSearch(id)}>Agregar</button>
          <button onClick={() => props.onSearch(Math.floor(Math.random() * (827 - 1 + 1)) + 1)}>Aleatorio</button>
       </div>

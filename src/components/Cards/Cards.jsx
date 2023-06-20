@@ -1,8 +1,9 @@
-import Card from './Card';
+import Card from '../Card/Card';
+import "./Cards.css"
 
 export default function Cards({characters, onClose}) {
    return (
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="cardsContainer">
       {characters.map((element) => {
       return <Card key={element.id} personaje={element} onClose={onClose}/>
       })}
