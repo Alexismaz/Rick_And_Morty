@@ -15,6 +15,9 @@ export default function Nav(props) {
             <Link className="linkNav" to="/">
             <button className="buttonNav">LogOut</button>
             </Link>
+            <Link to="/favorites">
+                <button className="buttonNav">Favorites</button>
+            </Link>
             <Link className="linkNav" to="/home">
             <button className="buttonNav">Home</button>
             </Link>

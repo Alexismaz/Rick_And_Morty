@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Form from './components/Form/Form';
+import Favorites from "./components/Favorites/Favorites"
 
 function App() {
    const [access, setAccess] = useState(false)
@@ -49,6 +50,7 @@ function App() {
          {location.pathname === "/" ? null : <Nav onSearch={onSearch}/>}
          <Routes>
             <Route path="/" element={<><Login/> <Form login={login}/></>}/>
+            <Route path="/favorites" element={<><Favorites onClose={onClose}/></>}/>
             <Route path="/home" element={<><Home/><Cards characters={characters} onClose={onClose} /></> }/>
             <Route path="/about" element={<About/>}/>
             <Route path="/detail/:id" element={<Detail/>}/>

@@ -26,7 +26,7 @@ export default function Form({login}) {
                 <img src={fondoForm} alt="" />
             </div>
             <label className="email">Email</label>
-            <input className="emailIn" autocomplete="off" placeholder="Ejemplo@hotmail.com" type="text" name="email" onChange={handleChange} value={userData.email} key="email1" />
+            <input className="emailIn" autoComplete="off" placeholder="Ejemplo@hotmail.com" type="text" name="email" onChange={handleChange} value={userData.email} key="email1" />
             <label className="emailError">{errors?.email && errors.email}</label>
             <label className="pass">Password</label>
             <input className="passIn" placeholder="Password123..." type="password" name="password" onChange={handleChange} value={userData.password} key="password1" />

@@ -10,6 +10,14 @@
   font-size: 20px;
   border-radius: 10px;
   z-index: 1;
+}.buttonFav {
+  position: absolute;
+  top: 58%;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.329);
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
 }
 .buttonCard:hover {
   background-color: rgba(0, 0, 0, 0.075);
