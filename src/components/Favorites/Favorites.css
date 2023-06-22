@@ -9,3 +9,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+select {
+    background-color: rgb(54, 110, 194);
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    border: none;
+}
