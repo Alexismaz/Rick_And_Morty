@@ -29,6 +29,7 @@
 .img {
     width: 100%;
     height: auto;
+    max-height: 91.8vh;
     border-radius: 100px;
 }
 .buttonDetail {

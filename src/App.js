@@ -23,6 +23,9 @@ function App() {
          navigate('/home');
       }
    }
+   function logOut() {
+      setAccess(false)
+   }
    useEffect(() => {
       !access && navigate('/');
    }, [access]);
@@ -47,7 +50,7 @@ function App() {
    const location = useLocation()
    return (
       <div className='App'>
-         {location.pathname === "/" ? null : <Nav onSearch={onSearch}/>}
+         {location.pathname === "/" ? null : <Nav onSearch={onSearch} logOut={logOut}/>}
          <Routes>
             <Route path="/" element={<><Login/> <Form login={login}/></>}/>
             <Route path="/favorites" element={<><Favorites onClose={onClose}/></>}/>
