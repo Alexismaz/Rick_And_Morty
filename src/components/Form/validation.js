@@ -6,7 +6,7 @@ export const validator = (userdata) => {
     } else if(!validateEmail(userdata.email)) {
         errors.email = "El email no es valido"
     } else if(userdata.email.length > 35) {
-        errors.mail = "El email no puede contener mas de 35 caracteres"
+        errors.email = "El email no puede contener mas de 35 caracteres"
     }
     if(!userdata.password) {
         errors.password = "El password esta vacio"
