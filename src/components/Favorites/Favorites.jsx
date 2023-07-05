@@ -5,13 +5,13 @@ import { filterCards, orderCards } from "../../redux/actions";
 import "./Favorites.css"
 
 function Favorites({myFavorites, onClose}) {
-    const [aux, setAux] = useState(false)
+    const [fav, setFav] = useState(false)
     const dispatch = useDispatch()
     const handleOrder = (e) => {
-        if(aux === true) {
-            setAux(false)
+        if(fav === true) {
+            setFav(false)
         } else {
-            setAux(true)
+            setFav(true)
         }
         dispatch(orderCards(e.target.value))
     }
@@ -23,7 +23,6 @@ function Favorites({myFavorites, onClose}) {
             <select onChange={handleOrder} name="favFilter" id="favFilter">
             <option value="A">Ascendente</option>
             <option value="D">Descendente</option>
-           
             </select>
             <select onChange={handleFilter} name="orderFilter" id="orderFilter">
             <option value="Male">Male</option>

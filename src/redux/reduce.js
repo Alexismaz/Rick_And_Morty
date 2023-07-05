@@ -7,12 +7,12 @@ export default function rootReducer(state = initialState, {type, payload}) {
     switch(type) {
         case ADD_FAV:
             return {...state,
-                allCharacters: [...state.allCharacters, payload],
-                myFavorites: [...state.allCharacters, payload]}
+                allCharacters: payload,
+                myFavorites: payload}
         case REMOVE_FAV:
             return {...state,
-                myFavorites: state.myFavorites?.filter(Element => Element.id !== parseInt(payload)),
-                allCharacters: state.allCharacters?.filter(Element => Element.id !== parseInt(payload))}
+                myFavorites: payload,
+                allCharacters: payload}
         case FILTER:
             if(payload === "All") {
                 return {...state,

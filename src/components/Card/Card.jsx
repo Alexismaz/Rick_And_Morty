@@ -21,6 +21,12 @@ function Card({personaje, onClose, addFav, removeFav, myFavorites}) {
          removeFav(personaje.id)
       }
    }
+   const removeFavorite = () => {
+      if(isfav === true) {
+         setIsFav(false)
+         removeFav(personaje.id)
+      }
+   }
    
    return (
       <div className="card">
@@ -30,7 +36,7 @@ function Card({personaje, onClose, addFav, removeFav, myFavorites}) {
          <button className="buttonFav" onClick={handleFavorite}>🤍</button>
          )}
          <img src={personaje.image} alt={personaje.name} />
-         <button className="buttonCard" onClick={() => {onClose(personaje.id); handleFavorite()}}>X</button> 
+         <button className="buttonCard" onClick={() => {onClose(personaje.id); removeFavorite()}}>X</button> 
          <Link to={`/detail/${personaje.id}`}>
          <h2 className="cardName">{personaje.name}</h2>
          </Link>
