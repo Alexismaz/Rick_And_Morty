@@ -1,0 +1,21 @@
+.fondoFavorites {
+    padding-top: 20px;
+    background-image: url("../../Images/fondo-Home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+select {
+    background-color: rgb(54, 110, 194);
+    border-radius: 5px;
+    font-size: 18px;
+    height: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    border: none;
+}

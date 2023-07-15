@@ -1,0 +1,61 @@
+.form {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 5px;
+}
+.pass {
+    color: rgb(69, 212, 146);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.email {
+    color: rgb(69, 212, 146);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.submit {
+    margin-top: 20px;
+    border: none;
+    background-color: rgba(175, 67, 34, 0.774);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+}
+.passIn {
+    height: 24px;
+    width: 250px;
+}
+.emailIn {
+    height: 24px;
+    width: 250px;
+}
+.passError {
+    font-size: 17px;
+ color: rgb(253, 59, 59);
+ padding-top: 5px;
+}
+.emailError {
+    font-size: 17px;
+    color: rgb(253, 59, 59);
+ padding-top: 5px;
+}
+.fondoForm {
+    background-image: url(../../Images/fondo_login.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
